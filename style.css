@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+}
+.navbar-links a {
+    text-decoration: none;
+    color: #1D232C;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: #1D232C;
+}
+.navbar-menu-toggle{
+    display: none;
+}
+
+/* side navbar */
+
+.side-navbar{
+    background-color: #1D232C;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 1s;
+   
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+    
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+    
+    
+}
+/* Header */
+
+.header{
+     display: flex;
+     justify-content: center;
+     gap: 50px;
+     padding: 50px;
+
+}
+.header-button{
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #1D232C;
+    color: azure;
+    cursor: pointer;
+}
+/*  service*/
+.service{
+    padding: 20px;
+}
+.service-container-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.service-container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .service-container-2 div{
+    background-color: #F2F4F7;
+    border-radius: 5px;
+    padding: 10px;
+
+  }
+/* new arrival */
+.new-arrival{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis:20%;
+}
+.new-arrival-container button{
+    padding-top:5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 10px;
+    color: #1D232C;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    border-radius: 10px;
+    border: none;
+
+}
+/* news */
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+
+}
+.news button{
+    margin-top: 10px;
+    color:#F2F4F7;
+    background-color: #1D232C;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.footer{
+   background-color: #1D232C;
+   color: #F2F4F7;
+   margin-top: 40px;
+   padding: 40px;
+
+}
+/* product */
+.product-section{
+    margin-top: 20px;
+}
+.product-search{
+    width: 80%;
+    border: solid black 2px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+
+}
+.product-search input:focus{
+    outline: none;
+}
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.products-box {
+    text-align: center;
+    flex-basis: 20%;
+}
+.products-box img{
+    border-radius: 10px;
+}
+.container-page {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color:#1D232C;
+    color: #F2F4F7;
+    border-radius: 5px;
+    margin-bottom:100px;
+    
+}
+
+
+.page input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+ 
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.contact-button{
+    padding: 10px;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:#7CB9E8;
+    color: #161717;
+    border-radius: 5px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    
+
+}
+/* media query */
+@media screen and (max-width:700px){
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .new-arrival{
+        justify-content: center;
+    }
+    .header-image{
+        width: 60vw;
+    }
+    .service-container-1{
+        display: none;
+    }
+    .service-container-2{
+       flex-direction: column;
+    }
+    .container-page{
+        margin: 20px;
+    }
+    .products{
+        justify-content: center;
+    }
+    .products-box{
+        width: 60vw;
+    }
+
+    
+    
+}
